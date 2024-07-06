@@ -11,4 +11,4 @@ services:
     command: tunnel --no-autoupdate run
     restart: unless-stopped
     environment:
-      - CLOUDFLARE=${CLOUDFLARE}
+      - ${CLOUDFLARE_}=${CLOUDFLARE}
