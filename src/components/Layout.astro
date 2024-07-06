@@ -1,0 +1,31 @@
+---
+import "@fontsource/geist-mono";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/ico+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>gabox</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    color-scheme: light dark;
+  }
+  html {
+    font-family: "Geist Mono", sans-serif;
+  }
+  body {
+    background-color: #121212;
+    color: #e1e1e1;
+    display: flex;
+    justify-content: center;
+  }
+</style>
